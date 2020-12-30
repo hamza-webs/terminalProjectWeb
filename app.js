@@ -48,7 +48,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-mongoose.connect("",{ useNewUrlParser: true ,useUnifiedTopology: true}).then(()=>{
+mongoose.connect("mongodb+srv://hamza:12345@cluster0.wea3b.mongodb.net/eshop?retryWrites=true&w=majority",{ useNewUrlParser: true ,useUnifiedTopology: true}).then(()=>{
   console.log("Connection to mongoDB Successfull");
 }).catch((err)=>{
 console.log("Connection error");
